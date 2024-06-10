@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Dosis", sans-serif;
+    box-sizing: border-box;
+}
+
+
+
+
+
+
+
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #222121, #132a5a, #360542);
+    padding: 10px;
+    overflow: hidden;
+    z-index: 5;
+    position: fixed;
+
+
+}
+
+.todo-app {
+    width: 100%;
+    max-width: 500px;
+    max-height: 600px;
+    background: #fff;
+    margin: 100px auto 20px;
+    padding: 40px 30px 70px;
+    border-radius: 10px;
+    position: relative;
+    bottom: 450px;
+
+}
+
+.todo-app h2 {
+    color: #002765;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+
+
+}
+
+.todo-app h2 img {
+    width: 30px;
+    margin-left: 10px;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #edeef0;
+    border-radius: 30px;
+    padding-left: 20px;
+    margin-bottom: 25px;
+
+
+
+}
+
+input {
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 10px;
+    font-size: larger;
+    font-weight: 300;
+
+}
+
+button {
+    border: none;
+    outline: none;
+    padding: 16px 50px;
+    background: #000000;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 40px;
+}
+
+ul {
+    height: 400px;
+    /* Adjust this height as needed */
+    overflow-y: auto;
+    /* Enables vertical scrolling */
+    overflow-x: hidden;
+    /* Disables horizontal scrolling */
+
+}
+
+
+ul li {
+    list-style: none;
+    font-size: 17px;
+    padding: 12px 8px 12px 50px;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+
+
+
+}
+
+/* ul li   {
+    content: '';
+    position: absolute ;
+    height: 28px;
+    width:28px;
+    border-radius: 50%;
+    background-image: url(assects/uncheck.png); 
+    background-size: cover;
+    background-position: center;
+    top: 12px;
+    left: 8px;
+} */
+
+ul li {
+    font-size: larger;
+    padding-left: 5px;
+    color: #000000;
+}
+
+li:hover {
+    font-size: large;
+}
+
+ul li.checked {
+    text-decoration: line-through;
+}
+
+ul li span {
+    position: absolute;
+    right: 0px;
+    top: 15px;
+    width: 40px;
+    height: 40px;
+    font-size: 22px;
+    color: rgb(102, 95, 95);
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+
+}
+
+ul li span:hover {
+    background: #b9b8b8;
+
+}
+
+/*  USED MEDIA QUERIES FOR RESPONSIVENESS */
+
+@media only screen and (max-width: 600px) {
+    .todo-app {
+        width: 100%;
+        max-width: 300px;
+        max-height: 400px;
+        top: -180px;
+
+    }
+
+    ul {
+        height: 200px;
+        /* Adjust this height as needed */
+        overflow-y: auto;
+        /* Enables vertical scrolling */
+        overflow-x: hidden;
+        /* Disables horizontal scrolling */
+
+    }
+
+    button {
+        position: relative;
+        right: 180px;
+        bottom: 160px;
+
+    }
+}

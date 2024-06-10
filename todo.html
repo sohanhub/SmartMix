@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" sizes="16x16" type="image/png" href="favicon.png" />
+    <title>Sohan - ToDo</title>
+    <link rel="stylesheet" href="todo.css">
+
+</head>
+
+
+<body>
+
+    <!--  -->
+
+
+
+    <!--  -->
+    <div class="container">
+
+        <header>
+            <div>
+                <ul
+                    style="display: flex!important; flex-wrap: wrap!important; justify-content: space-around!important;">
+                    <li> <a href="index.html">HOME</a></li>
+                    <li> <a href="jokes.html">JOKES</a></li>
+                    <li> <a href="calculator.html">CALCULATOR</a></li>
+                    <li><a href="quotes.html">QUOTES</a></li>
+
+                </ul>
+            </div>
+
+
+        </header>
+
+        <div class="todo-app">
+            <h2> To-Do List <img src="todo.png"></h2>
+            <div class="row">
+                <input type="text" id="input-box" placeholder="add your task">
+                <button class="addbtn" onclick="addTask()">Add</button>
+            </div>
+
+            <ul id="list-container">
+                <!-- <li class="checked">task</li>
+        <li>task</li>
+        <li>task</li> -->
+            </ul>
+        </div>
+
+    </div>
+
+
+
+    <script src="todo.js"></script>
+</body>
+
+</html>
